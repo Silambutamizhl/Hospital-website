@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>web page</title>
+        <!--<title>Responsive Card Slider</title>-->
+        <!-- Swiper CSS -->
+        <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="sliser.css">
+        <link rel="stylesheet" href="style.css">
+        <!-- CSS -->
+        <!-- CDN -------font -awesom --------------------------------------------------------->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <!-- CDN -------font -awesom ---------------------------------------------------------> 
+                          
+    </head>
+    <body>
+<!-----------------------------------NAV BAR ----------------------------START-------------------------->
+ <header>
+        <nav>
+                <div class="mytopnav" id="topnavbar">
+                    <div class="logo">
+                        <img src="images/logo.jpg" alt="hospital logo">
+                    </div>
+                        <div class="navbar">
+                            <ul class="nav-link">
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="#About">About</a></li>
+                                <li><a href="#Departments">Departments</a>
+                                <ul class="depart-sub">
+                            <li><a href="#">Anaesthesiology</a></li>
+                            <li><a href="#">Aesthetic / Cosmetic Surgery</a></li>
+                            <li><a href="#">Bariatric & Metabolic Surgery</a></li>
+                            <li><a href="#">Cardiology & Preventive Cardiology</a></li>
+                            <li><a href="#">Cardiothoracic & Vascular Surgery</a></li>
+                            <li><a href="#">Dental Surgery</a></li>
+                            <li><a href="#">Dermatology</a></li>
+                            <li><a href="#">Emergency Medicine</a></li>
+                            <li><a href="#">Endocrinology & Diabetology</a></li>
+                            <li><a href="#">Endogynaecology</a></li>
+                            <li><a href="#">ENT Surgery</a></li>
+                            <li><a href="#">Fertility Clinic</a></li>
+                            <li><a href="#">Forensic Medicine & Toxicology</a></li>
+                            <li><a href="#">Gastroenterology</a></li>
+                            <li><a href="#">General & Gastro Intestinal Surgery</a></li>
+                            <li><a href="#">Geriatric Medicine</a></li>
+                            <li><a href="#">Hepato-Pancreato-Biliary Surgery</a></li>
+                            <li><a href="#"> Institutional Human Ethics Committee (IHEC)</a></li>
+                            <li><a href="#">Medical Oncology</a></li>
+                            <li><a href="#">Endogynaecology</a></li>
+                            <li><a href="#">ENT Surgery</a></li>
+                            <li><a href="#">Fertility Clinic</a></li>
+                            <li><a href="#">Forensic Medicine & Toxicology</a></li>
+                            <li><a href="#">Gastroenterology</a></li> 
+                                </ul>
+                               </li>
+                                <li><a href="#">Research</a>
+                                    <ul class="Research-sub">
+                                        <li><a href="#">Dermatology</a></li>
+                                        <li><a href="#">Emergency Medicine</a></li>
+                                        <li><a href="#">Endocrinology</a></li>
+                                        <li><a href="#">Endogynaecology</a></li>
+                                        <li><a href="#">ENT Surgery</a></li>
+                                    </ul>
+                               </li>
+                                <li><a href="#">Education</a></li>
+                                <li><a href="#">Facilities</a>
+                                    <ul class="Facilities-sub">
+                                        <li><a href="#">Dermatology</a></li>
+                                        <li><a href="#">Emergency Medicine</a></li>
+                                        <li><a href="#">Endocrinology & Diabetology</a></li>
+                                        <li><a href="#">Endogynaecology</a></li>
+                                        <li><a href="#">ENT Surgery</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Awards</a></li>
+                                <li><a href="#">Medical Tourism</a></li>
+                            </ul>
+                        </div>
+                        <div class="search-bar">
+                            <div class="search-icon">
+                                <button id="myBtn" title="button" ><i class="fa fa-search" id="open web-search"></i></button>  
+                            </div> 
+                        </div> 
+                    
+                    <!--------mode-------------------search-----model----------->
+                                <div id="myModal" class="modal">
+ <!-- Modal content----> 
+                                    <div class="modal-content">
+                                            <div class="web-content">
+                                                <input type="radio" id="recommed" name="recommed"  title="radio-btn">Web
+                                                <input type="radio" id="recommed" name="recommed"  title="radio-btn3">People 
+                                                <span class="close">&times;</span>
+                                            </div>
+                                            <div class="web-search-field">
+                                            <input type="search" name="Search" id="web-search-field" placeholder="Search...."><span><i class="fa fa-search"></i></span>
+                                            </div>    
+                                    </div>
+                                </div>
+
+                                    <div class="menu-icon-bar">
+                                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                            <i class="fa fa-bars"></i>
+                                          </a>
+                                    </div>
+                </div>
+                
+        </nav>
+    </header>
+<!-----------------------------------NAV BAR ----------------------------START-------------------------->
+
+<!-------------------------java Script---------------------------------------------------------------------->
+<script src="menu.js"></script>
+<script src="index.js"></script>
+<!-------------------------java Script----Source END------------------------------->
+
+<!-------------------front-panel scetion----------------------->
+    <section class="front">
+      <div class="bg-cover">
+       <div class="contact">
+        <div class="contact-add">
+            <a hre="#Contact Us">Contact Us</a>
+        </div>
+        </div>
+        <!------------------MEDIA STICKY---------->     
+          <div class="s-m">
+                <div class="s-m-media">
+                    <a href=""><img src="images/facebook.png" alt="facebook logo" srcset=""></a>
+                    <a href="instagram"><img src="images/instagram.png"  alt="facebook logo"></a>
+                    <a href="youtube.png"><img src="images/youtube.png"  alt="youtube logo"></a>
+                    <a href="whatsapp.png"><img src="images/whatsapp.png"  alt="whatsapp logo"></a>
+                 
+                </div>
+            </div>
+  <!------------------MEDIA STICKY-----END  -----------------------------------> 
+        <div class="info-cont">
+            <div class="info">
+                <div class="checkup">
+                    <h1><a href="#" class="checkup">Here for Master Health Check Details</a>
+                </div>
+                <div class="in-fo">
+                    <h1><a href="#" class="in-fo">Emergency Info</a></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--------------------------------------Scrolling text------------------->
+
+<div class="marquee">
+    <div class="marquee-content">
+        <div>   
+            <ul><li><pre><a href="">Hospitals is the first Hospital in Tamil Nadu to receive the JCI Prime Certification</a></pre></li></ul>
+        </div>
+        <div>
+            <ul><li><pre><a href="">Pain Care Clinic</a></pre></li></ul>
+        </div>
+            <div>
+                <ul><li><pre><a href="">Pregnancy Yoga</a></pre></li></ul>
+            </div>
+            <div>
+                <ul><li><pre><a href="">Gastro Rare Surgery at Hospitals for Yemen Girl</a></pre></li></ul>
+            </div>
+            <div>
+                <ul><li><pre><a href="">Accredited Course in BLS ( Basic Life Support ) , ACLS (Advance Cardiac Life Support)</a></pre></li></ul>
+            </div> 
+    </div>
+</div>
+
+
+<!--------------------------------------Scrolling text------ END------------->
+
+
+
+<section>
+    <div class="consult-row">
+      <div class="row">
+          <div class="column-1">
+              <div class="head-1">
+                  <h2>HEALTH CARE</h2>
+                      <img src="images/doc.jpg" class="img-1" alt="doctor image">
+              </div>
+              <div class="consult-container">
+                      <h2>Find your Doctor</h2>
+                      <select name="department" id="dept" title="dept-option">
+                          <option value="">Select the Department</option>
+                          <option value="anaesthesiology">Anaesthesiology</option>
+                          <option value="bariatric-surgery">Bariatric surgery</option>
+                          <option value="biochemistry">Biochemistry</option>
+                          <option value="cardiology">Cardiology &amp; Preventive Cardiology</option>
+                          <option value="dental-surgery">Dental Surgery</option>
+                          <option value="dermatology">Dermatology</option>
+                          <option value="develop-pediatric">Developmental Pediatrics</option>
+                          <option value="dietary">Dietary</option>
+                          <option value="ent-surgery">ENT Surgery</option>
+                          <option value="endo-gynecology">Endo Gynecology</option>
+                          <option value="endocrinology">Endocrinology &amp; Diabetology</option>
+                          <option value="family-medicine">Family Medicine</option>
+                          <option value="fertility-centre">Fertility Department</option>
+                          <option value="gastroenterology">Gastroenterology</option>
+                      </select>
+                  
+                      <div class="doct-list">
+                          <select name="Select your Doctors" id="doct" title="dept-doc-name">
+                              <option value="">Select your Doctor Name</option>
+                              <option class="test_quality-management" data-value="quality-management"
+                                  value="https://www.psghospitals.com/quality-management/dr-umamaheswari-a/">Deputy
+                                  Quality Control Officer &#8211; Dr.Umamaheswari A</option>
+                              <option class="test_urology-andrology" data-value="urology-andrology"
+                                  value="https://www.psghospitals.com/urology-andrology/dr-a-bhalaguru-iyyan-ms-m-ch-dnb-uro/">
+                                  Dr. A.Bhalaguru Iyyan</option>
+                              <option class="test_gynaecology" data-value="gynaecology"
+                                  value="https://www.psghospitals.com/gynaecology/dr-abiramidevi-m/">Dr. Abiramidevi
+                                  .M</option>
+                              <option class="test_gastro-surgery" data-value="gastro-surgery"
+                                  value="https://www.psghospitals.com/gastro-surgery/dr-abhraham-benjamin/">Dr.Abraham
+                                  Benjamin</option>
+                              <option class="test_emergency" data-value="emergency"
+                                  value="https://www.psghospitals.com/emergency/dr-abuvatamilan-a-r/">
+                                  Dr.Abuvatamilan.A.R</option>
+                              <option class="test_family-medicine" data-value="family-medicine"
+                                  value="https://www.psghospitals.com/family-medicine/dr-adithyan-guhan/">Dr. Adithyan
+                                  Guhan</option>
+                          </select>
+                      </div>
+                      <div class="target-doc-name">
+                          <div class="choose-doc-name">
+                              <div class="enter-doc-name">
+                                  <input type="text" id="name" placeholder="Enter Doctor Name">
+                                  <i class="fa fa-search"></i>
+                              </div>
+                          </div>
+                      </div>
+              </div>
+          </div>
+          <div class="column-1">
+              <div class="head-2">
+                  <h2>EDUCATION</h2>
+                  <img src="images/book.jpg" class="img-2" alt="doctor image">
+              </div>
+              <div class="educat-container">
+                  <select name="department" id="dept" title="dept-opt">
+                      <option value="">Select the Department</option>
+                      <option value="anaesthesiology">Anaesthesiology</option>
+                      <option value="bariatric-surgery">Bariatric surgery</option>
+                      <option value="biochemistry">Biochemistry</option>
+                      <option value="cardiology">Cardiology &amp; Preventive Cardiology</option>
+                      <option value="cardiothoracic">Cardiothoracic &amp; Vascular Surgery</option>
+                      <option value="center-for-cli-sim-r">Center for Clinical Simulation &amp; Research</option>
+                      <option value="center-for-mo-me-thc">Center for Molecular Medicine &amp; Therapeutics</option>
+                      <option value="center-for-re-and-bi">Center for Research and Bioethics</option>
+                      <option value="cssd">Central Sterilization and Supply Department (CSSD)</option>
+                      <option value="dental-surgery">Dental Surgery</option>
+                      <option value="dermatology">Dermatology</option>
+                      <option value="develop-pediatric">Developmental Pediatrics</option>
+                      <option value="dietary">Dietary</option>
+                  </select>
+                  <div class="Program-option">
+                      <input type="radio" id="recommed-1" name="recommed" title="radio-btn"> <a href="https://psgimsr.ac.in/academics/">Degree program</a>
+                      <input type="radio" id="recommed-2" name="recommed" title="radio-btn2"> <a href="https://psgimsr.ac.in/facilities/library/">Student Degree</a>
+                  </div>
+              </div>
+          </div>
+
+      <div class="column-1">
+              <div class="head-3">
+                  <h2>RESEARCH</h2>
+                  <img src="images/micro.jpg" class="img-3" alt="microscope-image">
+              </div>
+              <div class="research-container">
+              <p>The center is involved in multivarious activities to meeet with this objective.The center's activities can be <br>broadly.....</br></p>
+              <div class="view-button">
+                  <button>VIEW MORE...</button>
+             </div>
+          </div>
+      </div>
+      </div>
+    </div>
+</section>
+
+<!--------------------------------------------------------OUR DEPARTMENTS------------------------------------>
+
+
+
+        <div class="department-container">
+            <div class="depart-content">
+                <h3>OUR DEPARTMENTS</h3>
+                <p>World class infrastructure with some of the latest equipment complimented by a highly competent team of doctors.</p>
+            </div>
+            <div class="nav-butt">
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+            </div>
+        <div class="slider-card">
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                   
+                    <div class="card swiper-slide">
+                        <div class="content-image">
+                            <img src="images/neurology.png" alt="logo" class="sec-img">
+                        </div>
+                            <div class="content-sec-2">
+                                <h3>ENT Surgery</h3>
+                                <p>The department of Ent surgery and...</p>
+                                <div class="content-button">
+                                    <input type="button" value="VIEW MORE...">  
+                                </div>
+                            </div>
+                    </div>
+
+
+
+                    <div class="card swiper-slide">
+                        <div class="content-image">
+                            <img src="images/gastroenterology.png" alt="logo" class="sec-img">
+                        </div>
+                            <div class="content-sec-2">
+                                <h3>General</h3>
+                                <p>The Department of...</p>
+                                <div class="content-button">
+                                    <input type="button" value="VIEW MORE...">  
+                                </div>
+                            </div>
+                    </div>
+
+
+
+
+
+
+
+                    <div class="card swiper-slide">
+                        <div class="content-image">
+                            <img src="images/cardiothoracic-surgery.png" alt="logo" class="sec-img">
+                        </div>
+                            <div class="content-sec-2">
+                                <h3>ENT Surgery</h3>
+                                <p>The department of Ent surgery and...</p>
+                                <div class="content-button">
+                                    <input type="button" value="VIEW MORE...">  
+                                </div>
+                            </div>
+                    </div>
+
+
+
+                    <div class="card swiper-slide">
+                        <div class="content-image">
+                            <img src="images/medical-oncology.jpg" alt="logo" class="sec-img">
+                        </div>
+                            <div class="content-sec-2">
+                                <h3>Medical Oncology</h3>
+                                <p>The Medical Oncology ,...</p>
+                                <div class="content-button">
+                                    <input type="button" value="VIEW MORE...">  
+                                </div>
+                            </div>
+                    </div>
+
+
+
+
+                    <div class="card swiper-slide">
+                        <div class="content-image">
+                            <img src="images/nephrology.png" alt="logo" class="sec-img">
+                        </div>
+                            <div class="content-sec-2">
+                                <h3>Nephrology</h3>
+                                <p>In 1993, the department started..</p>
+                                <div class="content-button">
+                                    <input type="button" value="VIEW MORE...">  
+                                </div>
+                            </div>
+                    </div>
+
+
+
+                    <div class="card swiper-slide">
+                        <div class="content-image">
+                            <img src="images/neurology.png" alt="logo" class="sec-img">
+                        </div>
+                            <div class="content-sec-2">
+                                <h3>Neurology</h3>
+                                <p>The department has a wide range of,..</p>
+                                <div class="content-button">
+                                    <input type="button" value="VIEW MORE...">  
+                                </div>
+                            </div>
+                    </div>
+
+
+
+                    <div class="card swiper-slide">
+                        <div class="content-image">
+                            <img src="images/plastic-surgery.png" alt="logo" class="sec-img">
+                        </div>
+                            <div class="content-sec-2">
+                                <h3>Paediatric Surgery</h3>
+                                <p>Paediatric surgery is,.....</p>
+                                <div class="content-button">
+                                    <input type="button" value="VIEW MORE...">  
+                                </div>
+                            </div>
+                    </div>
+
+
+
+
+                    <div class="card swiper-slide">
+                        <div class="content-image">
+                            <img src="images/anaesthesiology.png" alt="logo" class="sec-img">
+                        </div>
+                            <div class="content-sec-2">
+                                <h3>Anaesthesiology</h3>
+                                <p>Dr P. Rajanna started the Department of..</p>
+                                <div class="content-button">
+                                    <input type="button" value="VIEW MORE...">  
+                                </div>
+                            </div>
+                    </div>
+
+
+
+                    <div class="card swiper-slide">
+                        <div class="content-image">
+                            <img src="images/cardiology.png" alt="logo" class="sec-img">
+                        </div>
+                            <div class="content-sec-2">
+                                <h3>ENT Surgery</h3>
+                                <p>The department of Ent surgery and...</p>
+                                <div class="content-button">
+                                   <button class="button-btn">VIEW MORE..</button>
+                                </div>
+                            </div>
+                    </div>
+
+
+
+
+
+                    <div class="card swiper-slide">
+                        <div class="content-image">
+                            <img src="images/neurology.png" alt="logo" class="sec-img">
+                        </div>
+                            <div class="content-sec-2">
+                                <h3>ENT Surgery</h3>
+                                <p>The department of Ent surgery and...</p>
+                                <div class="content-button">
+                                    <input type="button" value="VIEW MORE...">  
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  <!-- Swiper JS -->
+      <!--Uncomment this line-->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript -->
+      <!--Uncomment this line-->
+    <script src="swiper.js"></script>
+    <!----------------------------------------DEPARTMENTS-------------------END---------------------------------->
+
+
+          
+<!----------------------------------------DEPARTMENTS----- -----------SECTIONS------------------------------------->
+
+    
+<!---------------------------------healthy tips content----------------------------------------------------------->
+
+
+        <section>
+            <div class="bg-health">
+                <div class="healthi-hind-container">
+                    <div class="healthi-hind">
+                        <h2>Health Tips</h2>
+                    <ul class="list">
+                       <li><img src="images/th.jpg" class="th-img" alt="" srcset=""><a href=""> Biggest Braib <b>Damaning Habits</b></a></li>
+                       <li><img src="images/th.jpg" class="th-img" alt="" srcset=""><a href=""> <b>Ten Important </b>Health Tips</a></li>
+                       <li><img src="images/th.jpg"  class="th-img" alt="" srcset=""><a href=""> How to <b>Reduce weight</b> Quickly</a></li>
+                       <li><img src="images/th.jpg"  class="th-img" alt="" srcset=""><a href=""><b>Diabets-</b>The Disorder Which Can be <br>Controlled and Prevented</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+<!------------------------------------------healthy tips content-------------------------------------------------->
+
+<!-------------------------footer---------------------------START------------------------------------------------------------->
+<footer>
+    <hr>
+<div class="foot-container">
+    <div class="content-footer">
+        <div class="content-footer-col">
+            <span>QUICK LINKS</span>
+            <ul class="about-hos">
+                <li><i class="fa fa-arrow-right"></i><a href="">Academic Activities</a></li>
+                <li><i class="fa fa-arrow-right"></i><a href="">Key Personnel</a></li>
+                <li><i class="fa fa-arrow-right"></i><a href="">Hospital Directory</a></li>
+                <li><i class="fa fa-arrow-right"></i><a href="">Photo Gallery</a></li>
+                <li><i class="fa fa-arrow-right"></i><a href="">Careers</a></li>
+                <li><i class="fa fa-arrow-right"></i><a href="">Staff Mail</a></li>
+                <li><i class="fa fa-arrow-right"></i><a href="">Students Information</a></li>
+                <li><i class="fa fa-arrow-right"></i><a href="">COVID Extending Healthcare</a></li>
+                <li><i class="fa fa-arrow-right"></i><a href="">Environmental Clearance Certificat</a></li>
+            </ul>
+        </div>
+            <div class="content-footer-col">
+                <span>FACILITIES</span>
+                <ul class="faci-lities">
+                    <li><i class="fa fa-arrow"></i><a href="">Ambulance Services</a></li>
+                    <li><i class="fa fa-arrow-right"></i><a href="">Intensive Care Unit</a></li>
+                    <li><i class="fa fa-arrow-right"></i><a href="">Blood Bank</a></li>
+                    <li><i class="fa fa-arrow-right"></i><a href="">Critical Care Areas</a></li>
+                    <li><i class="fa fa-arrow-right"></i><a href="">Laboratories</a></li> 
+                </ul>
+                </div>
+                <div class="content-footer-col">
+                    <ul class="faci-lities-2">
+                    <li><i class="fa fa-arrow-right"></i><a href="">Types of Wards</a></li>
+                    <li><i class="fa fa-arrow-right"></i><a href="">PACS</a></li>
+                    <li><i class="fa fa-arrow-right"></i><a href="">Health Insurance</a></li>
+                    <li><i class="fa fa-arrow-right"></i><a href="">Biomedical Engineering</a></li>
+                    <li><i class="fa fa-arrow-right"></i><a href="">Pharmacy</a></li>
+                </ul>
+                </div> 
+                <div class="content-footer-col">
+                    <span>CONTACT US</span>
+                    <span></span>
+                    <div class="location">
+                        <a href=""><i class="fa-sharp fa-solid fa-location-dot"></i>velachery,Coimbatore - 641 004<br>Tamil Nadu, INDIA.</a>
+                        <a href=""><i class="fa-sharp fa-solid fa-envelope"></i>@hospital.ac.in <br>feedback@hospital.ac.in</a>
+                        <a href=""><i class="fa-solid fa-phone"></i>+91 6382269783 <p>/ 2598822 (10 lines)</p></a>
+                        <a href=""><i class="fa-sharp fa-solid fa-person"></i>Help Line +91 9952149911</a>
+                    </div>
+                    <div class="sm-media-list" id="sm-media-list-image" >
+                        <a href=""><img src="images/facebook.png"  alt="facebook logo" srcset=""></a>
+                        <a href="youtube.png"><img src="images/youtube.png"     alt="youtube logo" ></a>
+                        <a href="whatsapp.png"><img src="images/whatsapp.png"   alt="whatsapp logo" ></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+         
+            <hr>
+        <div class="copyrights">
+            <p> © 2022 Hospitals Rights Reserved.</p>
+            <p>Powered by AES Technologies</p>
+        </div>
+    </div>   
+</footer>
+
+
+<!-------------------------footer---------------------------END------------------------------------------------------------>
+    </body>
+</html>
